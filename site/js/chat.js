@@ -87,6 +87,7 @@ function getRoomUserCount() {
     $.ajax({
         type: "POST",
         dataType: "json",
+        contentType: "application/json",
         url: apiUrl + "/push/count",
         data: JSON.stringify(jsonData),
         success: function (result) {
