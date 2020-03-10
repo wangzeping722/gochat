@@ -119,6 +119,7 @@ function send() {
     $.ajax({
         type: "POST",
         dataType: "json",
+        contentType: "application/json",
         url: apiUrl + "/push/pushRoom",
         data: JSON.stringify(jsonData),
         success: function (result) {
